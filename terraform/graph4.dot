@@ -1,0 +1,187 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] pol.cw_pol (expand)" [label = "pol.cw_pol", shape = "box"]
+		"[root] pol.extr_times_pol (expand)" [label = "pol.extr_times_pol", shape = "box"]
+		"[root] pol.lambda_secrets_manager (expand)" [label = "pol.lambda_secrets_manager", shape = "box"]
+		"[root] pol.load_cw_pol (expand)" [label = "pol.load_cw_pol", shape = "box"]
+		"[root] pol.load_lambda_secrets_manager (expand)" [label = "pol.load_lambda_secrets_manager", shape = "box"]
+		"[root] pol.load_processed_extrs_pol (expand)" [label = "pol.load_processed_extrs_pol", shape = "box"]
+		"[root] pol.load_s3_pol (expand)" [label = "pol.load_s3_pol", shape = "box"]
+		"[root] pol.load_trans_times_pol (expand)" [label = "pol.load_trans_times_pol", shape = "box"]
+		"[root] pol.s3_pol (expand)" [label = "pol.s3_pol", shape = "box"]
+		"[root] pol.trans_cw_pol (expand)" [label = "pol.trans_cw_pol", shape = "box"]
+		"[root] pol.trans_extr_times_pol (expand)" [label = "pol.trans_extr_times_pol", shape = "box"]
+		"[root] pol.trans_ingst_s3_pol (expand)" [label = "pol.trans_ingst_s3_pol", shape = "box"]
+		"[root] pol.trans_lambda_secrets_manager (expand)" [label = "pol.trans_lambda_secrets_manager", shape = "box"]
+		"[root] pol.trans_times_pol (expand)" [label = "pol.trans_times_pol", shape = "box"]
+		"[root] role.lambda_role (expand)" [label = "role.lambda_role", shape = "box"]
+		"[root] role.load_lambda_role (expand)" [label = "role.load_lambda_role", shape = "box"]
+		"[root] role.trans_lambda_role (expand)" [label = "role.trans_lambda_role", shape = "box"]
+		"[root] rp_attach.lambda_cw_attach (expand)" [label = "rp_attach.lambda_cw_attach", shape = "box"]
+		"[root] rp_attach.lambda_s3_extr_attach (expand)" [label = "rp_attach.lambda_s3_extr_attach", shape = "box"]
+		"[root] rp_attach.lambda_s3_attach (expand)" [label = "rp_attach.lambda_s3_attach", shape = "box"]
+		"[root] rp_attach.lambda_s3_trans_extr_attach (expand)" [label = "rp_attach.lambda_s3_trans_extr_attach", shape = "box"]
+		"[root] rp_attach.lambda_secret_attachment (expand)" [label = "rp_attach.lambda_secret_attachment", shape = "box"]
+		"[root] rp_attach.load_lambda_cw_attach (expand)" [label = "rp_attach.load_lambda_cw_attach", shape = "box"]
+		"[root] rp_attach.load_lambda_processed_extrs_bucket_attachment (expand)" [label = "rp_attach.load_lambda_processed_extrs_bucket_attachment", shape = "box"]
+		"[root] rp_attach.load_lambda_s3_attach (expand)" [label = "rp_attach.load_lambda_s3_attach", shape = "box"]
+		"[root] rp_attach.load_lambda_secret_attachment (expand)" [label = "rp_attach.load_lambda_secret_attachment", shape = "box"]
+		"[root] rp_attach.load_lambda_transation_times_attach (expand)" [label = "rp_attach.load_lambda_transation_times_attach", shape = "box"]
+		"[root] rp_attach.trans_cw_attachment (expand)" [label = "rp_attach.trans_cw_attachment", shape = "box"]
+		"[root] rp_attach.trans_ingst_s3_attachment (expand)" [label = "rp_attach.trans_ingst_s3_attachment", shape = "box"]
+		"[root] rp_attach.trans_secret_attachment (expand)" [label = "rp_attach.trans_secret_attachment", shape = "box"]
+		"[root] rp_attach.trans_times_attachment (expand)" [label = "rp_attach.trans_times_attachment", shape = "box"]
+		"[root] aws_lambda_func.extract_lambda (expand)" [label = "aws_lambda_func.extract_lambda", shape = "box"]
+		"[root] aws_lambda_func.load_lambda (expand)" [label = "aws_lambda_func.load_lambda", shape = "box"]
+		"[root] aws_lambda_func.trans_lambda (expand)" [label = "aws_lambda_func.trans_lambda", shape = "box"]
+		"[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)" [label = "aws_lambda_layer_vers.psycopg2_pandas_layer", shape = "box"]
+		"[root] aws_s3_bucket.code_bucket (expand)" [label = "aws_s3_bucket.code_bucket", shape = "box"]
+		"[root] aws_s3_object.lambda_code (expand)" [label = "aws_s3_object.lambda_code", shape = "box"]
+		"[root] aws_s3_object.layer_code (expand)" [label = "aws_s3_object.layer_code", shape = "box"]
+		"[root] aws_s3_object.load_lambda_code (expand)" [label = "aws_s3_object.load_lambda_code", shape = "box"]
+		"[root] aws_s3_object.trans_lambda_code (expand)" [label = "aws_s3_object.trans_lambda_code", shape = "box"]
+		"[root] data.archive_file.extract_lambda (expand)" [label = "data.archive_file.extract_lambda", shape = "box"]
+		"[root] data.archive_file.layer (expand)" [label = "data.archive_file.layer", shape = "box"]
+		"[root] data.archive_file.load_lambda (expand)" [label = "data.archive_file.load_lambda", shape = "box"]
+		"[root] data.archive_file.trans_lambda (expand)" [label = "data.archive_file.trans_lambda", shape = "box"]
+		"[root] data.aws_caller_identity.current (expand)" [label = "data.aws_caller_identity.current", shape = "box"]
+		"[root] data.pol_doc.cw_doc (expand)" [label = "data.pol_doc.cw_doc", shape = "box"]
+		"[root] data.pol_doc.load_cw_doc (expand)" [label = "data.pol_doc.load_cw_doc", shape = "box"]
+		"[root] data.pol_doc.load_processed_extrs_doc (expand)" [label = "data.pol_doc.load_processed_extrs_doc", shape = "box"]
+		"[root] data.pol_doc.load_s3_doc (expand)" [label = "data.pol_doc.load_s3_doc", shape = "box"]
+		"[root] data.pol_doc.load_transation_times_doc (expand)" [label = "data.pol_doc.load_transation_times_doc", shape = "box"]
+		"[root] data.pol_doc.s3_doc (expand)" [label = "data.pol_doc.s3_doc", shape = "box"]
+		"[root] data.pol_doc.s3_extr_times_doc (expand)" [label = "data.pol_doc.s3_extr_times_doc", shape = "box"]
+		"[root] data.pol_doc.s3_trans_extr_times_doc (expand)" [label = "data.pol_doc.s3_trans_extr_times_doc", shape = "box"]
+		"[root] data.pol_doc.trans_cw_doc (expand)" [label = "data.pol_doc.trans_cw_doc", shape = "box"]
+		"[root] data.pol_doc.trans_ingst_s3_doc (expand)" [label = "data.pol_doc.trans_ingst_s3_doc", shape = "box"]
+		"[root] data.pol_doc.trans_times_doc (expand)" [label = "data.pol_doc.trans_times_doc", shape = "box"]
+		"[root] data.aws_region.current (expand)" [label = "data.aws_region.current", shape = "box"]
+		"[root] provider/archive" [label = "provider/archive", shape = "diamond"]
+		"[root] provider/aws" [label = "provider/aws", shape = "diamond"]
+		"[root] var.extract_lambda" [label = "var.extract_lambda", shape = "note"]
+		"[root] var.load_lambda" [label = "var.load_lambda", shape = "note"]
+		"[root] var.python_runtime" [label = "var.python_runtime", shape = "note"]
+		"[root] var.trans_lambda" [label = "var.trans_lambda", shape = "note"]
+		"[root] pol.cw_pol (expand)" -> "[root] data.pol_doc.cw_doc (expand)"
+		"[root] pol.extr_times_pol (expand)" -> "[root] data.pol_doc.s3_extr_times_doc (expand)"
+		"[root] pol.lambda_secrets_manager (expand)" -> "[root] provider/aws"
+		"[root] pol.load_cw_pol (expand)" -> "[root] data.pol_doc.cw_doc (expand)"
+		"[root] pol.load_lambda_secrets_manager (expand)" -> "[root] provider/aws"
+		"[root] pol.load_processed_extrs_pol (expand)" -> "[root] data.pol_doc.load_processed_extrs_doc (expand)"
+		"[root] pol.load_s3_pol (expand)" -> "[root] data.pol_doc.load_s3_doc (expand)"
+		"[root] pol.load_trans_times_pol (expand)" -> "[root] data.pol_doc.load_transation_times_doc (expand)"
+		"[root] pol.s3_pol (expand)" -> "[root] data.pol_doc.s3_doc (expand)"
+		"[root] pol.trans_cw_pol (expand)" -> "[root] data.pol_doc.trans_cw_doc (expand)"
+		"[root] pol.trans_extr_times_pol (expand)" -> "[root] data.pol_doc.s3_trans_extr_times_doc (expand)"
+		"[root] pol.trans_ingst_s3_pol (expand)" -> "[root] data.pol_doc.trans_ingst_s3_doc (expand)"
+		"[root] pol.trans_lambda_secrets_manager (expand)" -> "[root] provider/aws"
+		"[root] pol.trans_times_pol (expand)" -> "[root] data.pol_doc.trans_times_doc (expand)"
+		"[root] role.lambda_role (expand)" -> "[root] provider/aws"
+		"[root] role.load_lambda_role (expand)" -> "[root] provider/aws"
+		"[root] role.trans_lambda_role (expand)" -> "[root] provider/aws"
+		"[root] rp_attach.lambda_cw_attach (expand)" -> "[root] pol.cw_pol (expand)"
+		"[root] rp_attach.lambda_cw_attach (expand)" -> "[root] role.lambda_role (expand)"
+		"[root] rp_attach.lambda_s3_extr_attach (expand)" -> "[root] pol.extr_times_pol (expand)"
+		"[root] rp_attach.lambda_s3_extr_attach (expand)" -> "[root] role.lambda_role (expand)"
+		"[root] rp_attach.lambda_s3_attach (expand)" -> "[root] pol.s3_pol (expand)"
+		"[root] rp_attach.lambda_s3_attach (expand)" -> "[root] role.lambda_role (expand)"
+		"[root] rp_attach.lambda_s3_trans_extr_attach (expand)" -> "[root] pol.trans_extr_times_pol (expand)"
+		"[root] rp_attach.lambda_s3_trans_extr_attach (expand)" -> "[root] role.trans_lambda_role (expand)"
+		"[root] rp_attach.lambda_secret_attachment (expand)" -> "[root] pol.lambda_secrets_manager (expand)"
+		"[root] rp_attach.lambda_secret_attachment (expand)" -> "[root] role.lambda_role (expand)"
+		"[root] rp_attach.load_lambda_cw_attach (expand)" -> "[root] pol.load_cw_pol (expand)"
+		"[root] rp_attach.load_lambda_cw_attach (expand)" -> "[root] role.load_lambda_role (expand)"
+		"[root] rp_attach.load_lambda_processed_extrs_bucket_attachment (expand)" -> "[root] pol.load_processed_extrs_pol (expand)"
+		"[root] rp_attach.load_lambda_processed_extrs_bucket_attachment (expand)" -> "[root] role.load_lambda_role (expand)"
+		"[root] rp_attach.load_lambda_s3_attach (expand)" -> "[root] pol.load_s3_pol (expand)"
+		"[root] rp_attach.load_lambda_s3_attach (expand)" -> "[root] role.load_lambda_role (expand)"
+		"[root] rp_attach.load_lambda_secret_attachment (expand)" -> "[root] pol.load_lambda_secrets_manager (expand)"
+		"[root] rp_attach.load_lambda_secret_attachment (expand)" -> "[root] role.load_lambda_role (expand)"
+		"[root] rp_attach.load_lambda_transation_times_attach (expand)" -> "[root] pol.load_trans_times_pol (expand)"
+		"[root] rp_attach.load_lambda_transation_times_attach (expand)" -> "[root] role.load_lambda_role (expand)"
+		"[root] rp_attach.trans_cw_attachment (expand)" -> "[root] pol.trans_cw_pol (expand)"
+		"[root] rp_attach.trans_cw_attachment (expand)" -> "[root] role.trans_lambda_role (expand)"
+		"[root] rp_attach.trans_ingst_s3_attachment (expand)" -> "[root] pol.trans_ingst_s3_pol (expand)"
+		"[root] rp_attach.trans_ingst_s3_attachment (expand)" -> "[root] role.trans_lambda_role (expand)"
+		"[root] rp_attach.trans_secret_attachment (expand)" -> "[root] pol.trans_lambda_secrets_manager (expand)"
+		"[root] rp_attach.trans_secret_attachment (expand)" -> "[root] role.trans_lambda_role (expand)"
+		"[root] rp_attach.trans_times_attachment (expand)" -> "[root] pol.trans_times_pol (expand)"
+		"[root] rp_attach.trans_times_attachment (expand)" -> "[root] role.trans_lambda_role (expand)"
+		"[root] aws_lambda_func.extract_lambda (expand)" -> "[root] role.lambda_role (expand)"
+		"[root] aws_lambda_func.extract_lambda (expand)" -> "[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)"
+		"[root] aws_lambda_func.extract_lambda (expand)" -> "[root] aws_s3_object.lambda_code (expand)"
+		"[root] aws_lambda_func.extract_lambda (expand)" -> "[root] aws_s3_object.layer_code (expand)"
+		"[root] aws_lambda_func.extract_lambda (expand)" -> "[root] data.archive_file.extract_lambda (expand)"
+		"[root] aws_lambda_func.load_lambda (expand)" -> "[root] role.load_lambda_role (expand)"
+		"[root] aws_lambda_func.load_lambda (expand)" -> "[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)"
+		"[root] aws_lambda_func.load_lambda (expand)" -> "[root] aws_s3_object.layer_code (expand)"
+		"[root] aws_lambda_func.load_lambda (expand)" -> "[root] aws_s3_object.load_lambda_code (expand)"
+		"[root] aws_lambda_func.trans_lambda (expand)" -> "[root] role.trans_lambda_role (expand)"
+		"[root] aws_lambda_func.trans_lambda (expand)" -> "[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)"
+		"[root] aws_lambda_func.trans_lambda (expand)" -> "[root] aws_s3_object.layer_code (expand)"
+		"[root] aws_lambda_func.trans_lambda (expand)" -> "[root] aws_s3_object.trans_lambda_code (expand)"
+		"[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)" -> "[root] aws_s3_bucket.code_bucket (expand)"
+		"[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)" -> "[root] data.archive_file.layer (expand)"
+		"[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)" -> "[root] var.extract_lambda"
+		"[root] aws_lambda_layer_vers.psycopg2_pandas_layer (expand)" -> "[root] var.python_runtime"
+		"[root] aws_s3_bucket.code_bucket (expand)" -> "[root] provider/aws"
+		"[root] aws_s3_object.lambda_code (expand)" -> "[root] aws_s3_bucket.code_bucket (expand)"
+		"[root] aws_s3_object.lambda_code (expand)" -> "[root] var.extract_lambda"
+		"[root] aws_s3_object.layer_code (expand)" -> "[root] aws_s3_bucket.code_bucket (expand)"
+		"[root] aws_s3_object.layer_code (expand)" -> "[root] data.archive_file.layer (expand)"
+		"[root] aws_s3_object.layer_code (expand)" -> "[root] var.extract_lambda"
+		"[root] aws_s3_object.load_lambda_code (expand)" -> "[root] aws_s3_bucket.code_bucket (expand)"
+		"[root] aws_s3_object.load_lambda_code (expand)" -> "[root] data.archive_file.load_lambda (expand)"
+		"[root] aws_s3_object.load_lambda_code (expand)" -> "[root] var.load_lambda"
+		"[root] aws_s3_object.trans_lambda_code (expand)" -> "[root] aws_s3_bucket.code_bucket (expand)"
+		"[root] aws_s3_object.trans_lambda_code (expand)" -> "[root] data.archive_file.trans_lambda (expand)"
+		"[root] aws_s3_object.trans_lambda_code (expand)" -> "[root] var.trans_lambda"
+		"[root] data.archive_file.extract_lambda (expand)" -> "[root] provider/archive"
+		"[root] data.archive_file.layer (expand)" -> "[root] provider/archive"
+		"[root] data.archive_file.load_lambda (expand)" -> "[root] provider/archive"
+		"[root] data.archive_file.trans_lambda (expand)" -> "[root] provider/archive"
+		"[root] data.aws_caller_identity.current (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.cw_doc (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] data.pol_doc.cw_doc (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] data.pol_doc.load_cw_doc (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] data.pol_doc.load_cw_doc (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] data.pol_doc.load_processed_extrs_doc (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.load_s3_doc (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.load_transation_times_doc (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.s3_doc (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.s3_extr_times_doc (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.s3_trans_extr_times_doc (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.trans_cw_doc (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] data.pol_doc.trans_cw_doc (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] data.pol_doc.trans_ingst_s3_doc (expand)" -> "[root] provider/aws"
+		"[root] data.pol_doc.trans_times_doc (expand)" -> "[root] provider/aws"
+		"[root] data.aws_region.current (expand)" -> "[root] provider/aws"
+		"[root] provider/archive (close)" -> "[root] data.archive_file.extract_lambda (expand)"
+		"[root] provider/archive (close)" -> "[root] data.archive_file.layer (expand)"
+		"[root] provider/archive (close)" -> "[root] data.archive_file.load_lambda (expand)"
+		"[root] provider/archive (close)" -> "[root] data.archive_file.trans_lambda (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.lambda_cw_attach (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.lambda_s3_extr_attach (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.lambda_s3_attach (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.lambda_s3_trans_extr_attach (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.lambda_secret_attachment (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.load_lambda_cw_attach (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.load_lambda_processed_extrs_bucket_attachment (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.load_lambda_s3_attach (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.load_lambda_secret_attachment (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.load_lambda_transation_times_attach (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.trans_cw_attachment (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.trans_ingst_s3_attachment (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.trans_secret_attachment (expand)"
+		"[root] provider/aws (close)" -> "[root] rp_attach.trans_times_attachment (expand)"
+		"[root] provider/aws (close)" -> "[root] aws_lambda_func.extract_lambda (expand)"
+		"[root] provider/aws (close)" -> "[root] aws_lambda_func.load_lambda (expand)"
+		"[root] provider/aws (close)" -> "[root] aws_lambda_func.trans_lambda (expand)"
+		"[root] provider/aws (close)" -> "[root] data.pol_doc.load_cw_doc (expand)"
+		"[root] root" -> "[root] provider/archive (close)"
+		"[root] root" -> "[root] provider/aws (close)"
+	}
+}
